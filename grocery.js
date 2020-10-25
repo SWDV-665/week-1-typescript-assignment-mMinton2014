@@ -12,17 +12,16 @@ var Grocery = /** @class */ (function () {
     return Grocery;
 }());
 // create a list of grocery items
-// new keyword is used to inititalise objects
 var list_of_items = [
     new Grocery("milk", 3, 10),
     new Grocery("bread", 6, 25),
     new Grocery("egg", 11, 10),
     new Grocery("Apple", 2, 1)
 ];
-// access the html element with id app
+// access the html element with app id
 var ele = document.getElementById("app");
-// create a <p> element for each item in the grocery list and
-// append it to the html page
+
+// create a <p> element for each item list and append it to the html page
 list_of_items.forEach(function (e) {
     var p = document.createElement("p");
     p.textContent = e.name + " " + e.quantity + " -> $" + e.price;

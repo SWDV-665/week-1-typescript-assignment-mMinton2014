@@ -28,8 +28,7 @@ let list_of_items = [
 // access the html element with app id
 const ele = document.getElementById("app");
 
-// create a <p> element for each item in list and
-// append it to the html page
+// create a <p> element for each item in list and append it to the html page
 list_of_items.forEach(e => {
     const p = document.createElement("p");
     p.textContent = `${e.name} ${e.quantity} -> $${e.price}`;
